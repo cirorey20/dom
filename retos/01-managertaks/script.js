@@ -10,5 +10,6 @@ addNewStaks.addEventListener('click', () => {
     nuevaTarea.textContent= textTask.value;
 
     newTask.appendChild(nuevaTarea);
+    textTask.value = "";
 });
 
