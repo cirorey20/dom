@@ -7,5 +7,5 @@ let addButton = addEventListener('click', () => {
     nuevaTarea.textContent= "Nueva Tarea Agregada";
 
     newTask.appendChild(nuevaTarea);
-})
+});
 
