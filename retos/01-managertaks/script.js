@@ -6,10 +6,16 @@ let addNewStaks = document.getElementById('addbutton');
 
 addNewStaks.addEventListener('click', () => {
     const nuevaTarea = document.createElement('li');
-    console.log(textTask.value);
+    // console.log(!textTask.value == "" ? false: true);
     nuevaTarea.textContent= textTask.value;
 
-    newTask.appendChild(nuevaTarea);
-    textTask.value = "";
+    if (!textTask.value == "") {
+        console.log(true);
+        newTask.appendChild(nuevaTarea);
+        textTask.value = "";
+    } else {
+        console.log(false);
+    }
+    
 });
 
