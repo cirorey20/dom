@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestor de Tareas</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Gestor de Tareas</h1>
     <div class="conteiner">
+        
+        <section class="manager">
+            <h3>Nueva tarea</h3>
+            <input type="text" id="inputTask">
+            <button id="addbutton">Add</button>
+        </section>
+
         <section class="list">
             <h3>Lista de Tareas</h3>
             <div id="newTask"></div>
-        </section>
-
-        <section class="manager">
-            <h3>Nueva tareas</h3>
-            <input type="text" id="inputTask">
-            <button id="addbutton">Add</button>
         </section>
     </div>
 <script src="script.js"></script>

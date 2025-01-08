@@ -13,14 +13,16 @@ addNewStaks.addEventListener('click', () => {
 
     // Crear botón de eliminar en la nueva tarea
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Eliminar';
+    deleteButton.classList.add('eliminar-button');
+    deleteButton.textContent = 'X';
 
     // Agregar el botón de eliminar a la tarea
     nuevaTarea.appendChild(deleteButton);
 
     // Crear botón de marcar tarea como completada
     const checkButton = document.createElement('button');
-    checkButton.textContent = 'Completada';
+    checkButton.classList.add('completada-button');
+    checkButton.textContent = '√';
 
     // Agregar el botón de check a la tarea
     nuevaTarea.appendChild(checkButton);

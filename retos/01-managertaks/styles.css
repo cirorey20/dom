@@ -1,28 +1,148 @@
 body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* Tamaño base */
+    color: #333;
+    /* Color del texto más oscuro para mejor contraste */
     background-color: rgb(226, 200, 167);
-    color: rgb(18, 16, 16);
-}
-.conteiner {
-    margin: 0 auto;
-    width: 40vw;
-    height: 50vh;
+    /* Ligeramente espaciado para mejorar la legibilidad */
+    letter-spacing: 0.5px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-    
-    
-    background-color: rgb(223, 141, 173);
-    
 }
+
+/* Estilos del Scroll */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(137, 170, 170); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #751d1d; 
+  }
+
+/* Estilos del conteiner */
+.conteiner {
+    background-color: #f0f0f0;
+    position: relative;
+    /* overflow: scroll; */
+    overflow: auto;
+
+    text-align: center;
+
+    height: 70vh;
+    width: 50vw;
+    top: 10vh;
+    left: 25vw;
+
+    box-shadow: 8px 6px 18px rgba(0, 0, 0, 0.1);
+    /* Sombra horizontal, vertical, difuminado, color */
+    border-radius: 5px;
+    /* Bordes redondeados */
+
+}
+
+/* Estilos del List Task*/
 .list {
-    width: 80%;
-    height: 97%;
-    background-color: rgb(179, 132, 199);
-    margin: 1%;
+    /* background-color: #e3f4e1; */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra horizontal, vertical, difuminado, color */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    border-bottom: 1px solid #ccc;
+    /* Color suave para el borde */
 }
+
+/* Estilos del Masnager Task */
 .manager {
-    background-color: rgb(149, 206, 121);
-    margin: 1%
+    background-color: #cce4f7;
+    /* margin: 1%; */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra horizontal, vertical, difuminado, color */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    border: 1px solid #ccc;
+    /* Color suave para el borde */
+}
+
+/* Estilos de los Botones */
+input[type="text"],
+button {
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: #5389a8; /* Verde claro para una apariencia amigable y positiva */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase; /* Estilo adicional para hacer el texto del botón más legible */
+    transition: background-color 0.3s; /* Transición suave para interacciones */
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #858585; /* Un tono ligeramente más oscuro al pasar el cursor */
+}
+
+button:active {
+    background-color: #397d34; /* Un tono más oscuro para simular que el botón está siendo presionado */
+    transform: translateY(2px); /* Mueve ligeramente el botón hacia abajo */
+}
+
+button:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 0 0 0 3px rgba(70, 130, 180, 0.5); /* Añade un sombreado para mostrar el foco */
+}
+
+.eliminar-button {
+    background-color: #c05755; /* Rojo para acciones de eliminación */
+    margin: 8px 0;
+    padding: 6px 10px;
+    margin-left: 8px;
+}
+
+.completada-button {
+    background-color: #7da77e; /* Verde para acciones completadas */
+    margin: 8px 0;
+    padding: 6px 10px;
+    margin-left: 7px;
+}
+
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    /* Más grande para los títulos principales */
+}
+
+h3 {
+    font-size: 18px;
+    /* Destacado pero no tan grande como el título principal */
+}
+
+button {
+    font-size: 16px;
+    /* Claro y legible */
+    font-weight: 500;
+    /* Peso medio para mejorar la visibilidad */
 }
